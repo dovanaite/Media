@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ANT TELEFO */
+.container{
+    height: 80vh;
+    width: 100%;
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:3%;
+    gap:2%;
+    justify-content: space-evenly;
+}
+.menu{
+    /* background-color: red; */
+    height: 10vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.chicken-container, .beef-container, .sushi-container{
+    background-color: rgb(145, 156, 167);
+    position: relative;
+    border: 3px solid;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1em;
+}
+.chicken, .beef, .sushi{
+    position: absolute;
+    border: 2px solid;
+    height: 10%;
+    width: 25%;
+    right:-0.15rem;
+    top:-0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink{
+    background-color: darksalmon;
+}
+.red{
+    background-color: rgb(163, 48, 77);
+    border: solid 2px black;
+    color:whitesmoke;
+}
+.yellow{
+    background-color: rgb(233, 216, 122);
+}
+
+/* ANT PLANCETES */
+@media (min-width:425px) and (max-width:767px){
+    .container{
+        height: 100vh;
+        /* border: 3px solid blue; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:3%;
+        gap:3%;
+        justify-content: center;
+        align-items: center;
+    }
+    .chicken-container{
+        background-color: rgb(145, 156, 167);
+        /* position: relative; */
+        border: 3px solid;
+        height: 50%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .beef-container{
+        background-color: rgb(145, 156, 167);
+        /* position: relative; */
+        border: 3px solid;
+        height: 50%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+    .sushi-container{
+        background-color: rgb(145, 156, 167);
+        /* position: relative; */
+        border: 3px solid;
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+/* ANT DIDELIO EKRANO */
+@media (min-width:768px){
+    .container{
+        height: 100vh;
+        /* background-color: rgb(145, 156, 167); */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin:3%;
+        gap:3%;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    .menu{
+        /* background-color: red; */
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+  
+
+
+
+
+
+}
