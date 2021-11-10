@@ -2,53 +2,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Baloo+2&family=Barlow+Semi+Condensed:wght@100&family=Changa:wght@200&family=Indie+Flower&family=Irish+Grover&family=PT+Sans&family=Patrick+Hand&family=Qahiri&family=Quicksand:wght@300&family=Rampart+One&family=Shadows+Into+Light&family=Teko:wght@300&family=Varela+Round&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Kurenaido&display=swap');
 
 /* ANT TELEFO */
 .container{
-    height: 80vh;
-    width: 100%;
+    /* height: 80vh; */
+    /* width: 100%; */
     /* border: 3px solid blue; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin:3%;
     gap:2%;
-    justify-content: space-evenly;
+    
+    /* justify-content: space-around; */
 }
 .menu{
     /* background-color: red; */
     height: 10vh;
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
 }
 .chicken-container, .beef-container, .sushi-container{
-    background-color: rgb(145, 156, 167);
+    background-color: rgb(156, 164, 172);
     position: relative;
     border: 3px solid;
-    height: 30%;
+    width: 95%;
+    /* height: 25%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
     font-size: 1em;
+    padding: 4vh;
+    margin:2%;
+    font-family: 'Indie Flower', cursive;
 }
 .chicken, .beef, .sushi{
     position: absolute;
-    border: 2px solid;
-    height: 10%;
-    width: 25%;
+    border: 3px solid;
+    height: 4vh;
+    /* width: 25%; */
     right:-0.15rem;
     top:-0.15rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1vh;
+    font-weight: bold;
 }
 .pink{
     background-color: darksalmon;
@@ -65,51 +71,53 @@
 /* ANT PLANCETES */
 @media (min-width:425px) and (max-width:767px){
     .container{
-        height: 100vh;
         /* border: 3px solid blue; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin:3%;
-        gap:3%;
         justify-content: center;
         align-items: center;
+        padding-top:1vh;
     }
     .chicken-container{
-        background-color: rgb(145, 156, 167);
+        /* background-color: rgb(145, 156, 167); */
         /* position: relative; */
         border: 3px solid;
-        height: 50%;
+        /* height: 50%; */
         width: 45%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        /* padding: 10% 3% 3% 3%; */
     }
     .beef-container{
-        background-color: rgb(145, 156, 167);
+        /* background-color: rgb(145, 156, 167); */
         /* position: relative; */
         border: 3px solid;
-        height: 50%;
+        /* height: 50%; */
         width: 45%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        /* padding: 10% 3% 3% 3%; */
 }
     .sushi-container{
-        background-color: rgb(145, 156, 167);
+        /* background-color: rgb(145, 156, 167); */
         /* position: relative; */
         border: 3px solid;
         height: 25%;
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: flex-end;
+        /* padding: 10% 3% 3% 3%; */
     }
 }
 /* ANT DIDELIO EKRANO */
@@ -123,17 +131,19 @@
         margin:3%;
         gap:3%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         /* justify-content: space-evenly; */
     }
     .menu{
         /* background-color: red; */
-        height: 10vh;
-        width: 100%;
+        /* height: 10vh; */
+        /* width: 100%; */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
+        margin-top:10%;
+        /* padding-top:30%; */
     }
   
 
